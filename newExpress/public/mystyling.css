@@ -9,7 +9,8 @@ position: relative;
 top:5px; left: 30px;
 }
  a:hover,
- a:active   {
+ a:active, 
+ a.active  {
   color: #ffeb3b;
 }
 
@@ -24,15 +25,19 @@ li{
 input{
     margin:5px;
     border-radius: 3px;
+    display: inline;
+    border-color:chocolate;
 }
 button{
     margin: 5px;
     border-radius: 3px;
+    border-color: chocolate;
 }
 button:hover{
-    background-color:chocolate;
+    color:chocolate;
+    outline-color:chocolate;
 }
-div{
+.div{
     margin: auto;
     border: 3px solid goldenrod;
     width: fit-content;
