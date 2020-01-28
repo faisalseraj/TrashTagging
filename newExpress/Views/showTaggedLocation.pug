@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Showing Tagged Locations
+        link(rel="stylesheet",  href="/mystyling.css")
+    body
+        header
+            nav
+                ul
+                    li 
+                        a(href="/api/v1/geotags/") Tag Location
+                    li
+                        a(href="/api/v1/showTaggedLocation/") Show Tagged Locations
+
+        main
+            article 
+                    each loc in lat_and_long
+                        h1 Your Tagged Location Is
+                        h2 Latitude: #{loc.lat}
+                        h2 Longitude: #{loc.long}
