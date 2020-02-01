@@ -28,8 +28,8 @@ exports.put=(req,res,next) => {
     });
 };
 
-exports.delet=(req,res,next) => {
+exports.deleteGeoTag=(req,res,next) => {
     res.status(200).json({
-        posts: [{Description:"This is Api for delete end point of api/v1/geotags"}]
+        posts: [{Description:"This is Api for delete end point of api/v1/geotags",Id:req.params.geotagId}]
     });
 };
